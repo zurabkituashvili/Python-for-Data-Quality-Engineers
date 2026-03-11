@@ -14,8 +14,6 @@ for _ in range(num_dicts):
     d = {key: random.randint(0, 100) for key in keys}
     dict_list.append(d)
 
-print("Generated list:", dict_list)
-
 # empty dict for final result
 result = {}
 
@@ -39,5 +37,3 @@ for key, occurrences in key_tracker.items():
         idx, value = max(occurrences, key=lambda x: x[1])
         new_key = f"{key}_{idx}"
         result[new_key] = value
-
-print("Merged dictionary:", result)
